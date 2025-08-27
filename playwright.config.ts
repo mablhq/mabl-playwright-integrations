@@ -24,9 +24,9 @@ export default defineConfig({
     [
       "@mablhq/playwright-reporter",
       {
+        outputDir: "./mabl-reports",
         apiKey: process.env.MABL_API_KEY,
         workspaceId: process.env.MABL_WORKSPACE_ID,
-        planName: "Playwright Tests",
       },
     ],
   ],
@@ -46,11 +46,21 @@ export default defineConfig({
       use: {
         baseURL: "https://my.freshbooks.com",
         ...devices["Desktop Chrome"],
+        mabl: {
+          planName: process.env.MABL_PLAN_NAME,
+          environmentId: process.env.MABL_ENVIRONMENT_ID,
+          applicationId: process.env.MABL_APPLICATION_ID,
+        },
       },
     },
     {
       name: "chromium",
       use: { ...devices["Desktop Chrome"] },
+      mabl: {
+        planName: process.env.MABL_PLAN_NAME,
+        environmentId: process.env.MABL_ENVIRONMENT_ID,
+        applicationId: process.env.MABL_APPLICATION_ID,
+      },
     },
 
     {
