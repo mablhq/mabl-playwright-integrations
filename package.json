@@ -9,7 +9,7 @@
   "license": "ISC",
   "devDependencies": {
     "@mablhq/playwright-reporter": "0.2.1",
-    "@mablhq/playwright-tools": "2.51.42",
+    "@mablhq/playwright-tools": "2.81.2",
     "@playwright/test": "1.50.0",
     "@types/node": "22.12.0",
     "dotenv": "16.4.7"
