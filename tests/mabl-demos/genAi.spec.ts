@@ -1,5 +1,6 @@
 import { expect, test } from "../fixtures";
 
+// Visual assertions are known as "GenAI Assertions" in the evaluateGenAiAssertion function.
 test('Evaluate a GenAI assertion to validate the state of a page', async ({
   page,
   mabl,

@@ -28,8 +28,8 @@ Create a temporary email address, send a test email, and open it to verify that 
 
 https://github.com/mablhq/mabl-playwright-integrations/blob/10ad92514d993016a479f39b9e2063c3dc39eaf9/tests/mabl-demos/email.spec.ts#L8-L22
 
-### GenAI testing
-Evaluate the state of the page `https://www.mabl.com` with a [GenAI Assertion](https://help.mabl.com/hc/articles/28810650854292):
+### AI-powered validations
+Evaluate the state of the page `https://www.mabl.com` with a [visual assertion](https://help.mabl.com/hc/articles/28810650854292):
 
 https://github.com/mablhq/mabl-playwright-integrations/blob/10ad92514d993016a479f39b9e2063c3dc39eaf9/tests/mabl-demos/genAi.spec.ts#L7-L14
 
