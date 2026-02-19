@@ -45,6 +45,7 @@ test('Create an invoice', async ({context, page, mabl}) => {
   // use the mabl tools to open the file in a new Page 
   await mabl.openPdfFile(`./downloads/${invoiceNumber}.pdf`, pageForPdf);
 
+  // Visual assertions are known as "GenAI Assertions" in the evaluateGenAiAssertion function.
   const aiResult = await mabl.evaluateGenAiAssertion(
     pageForPdf, 
     `
