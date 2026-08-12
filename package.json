@@ -7,6 +7,10 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "overrides": {
+    "axios@^1.0.0": "1.19.0",
+    "axios@^0.27.2": "0.33.0"
+  },
   "devDependencies": {
     "@mablhq/playwright-reporter": "0.2.1",
     "@mablhq/playwright-tools": "2.81.2",
